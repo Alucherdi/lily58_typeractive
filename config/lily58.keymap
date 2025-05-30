@@ -10,32 +10,39 @@
 
 / {
     macros {
-        globeleft: new_macro {
+        globeleft: globeleft {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp LEFT>;
-            label = "NEW_MACRO";
+            bindings = <&kp GLOBE &kp LEFT_ARROW>;
+            label = "GLOBELEFT";
         };
 
         globeright: globeright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp RIGHT>;
+            bindings = <&kp GLOBE &kp RIGHT_ARROW>;
             label = "GLOBERIGHT";
         };
 
         globeup: globeup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp UP>;
+            bindings = <&kp GLOBE &kp UP_ARROW>;
             label = "GLOBEUP";
         };
 
         globedown: globedown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp DOWN>;
+            bindings = <&kp GLOBE &kp DOWN_ARROW>;
             label = "GLOBEDOWN";
+        };
+
+        test: test {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp L &kp U>;
+            label = "TEST";
         };
     };
 
@@ -117,7 +124,7 @@
         function_layer {
             bindings = <
 &trans  &trans  &trans      &trans      &trans       &trans                    &trans  &trans         &trans         &trans      &trans      &trans
-&trans  &trans  &trans      &globeup    &sk GLOBE    &trans                    &trans  &kp LG(N1)     &kp LG(N2)     &kp LG(N3)  &kp LG(N4)  &kp LG(N5)
+&test   &trans  &trans      &globeup    &sk GLOBE    &trans                    &trans  &kp LG(N1)     &kp LG(N2)     &kp LG(N3)  &kp LG(N4)  &kp LG(N5)
 &trans  &trans  &globeleft  &globedown  &globeright  &trans                    &trans  &kp LG(N6)     &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
 &trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans  &kp LS(LC(C))  &kp LS(LC(V))  &trans      &trans      &trans
                             &trans      &trans       &trans  &trans    &trans  &trans  &trans         &trans
