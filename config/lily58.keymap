@@ -13,32 +13,28 @@
         globeleft: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp LEFT>, <&macro_tap>;
-
+            bindings = <&kp GLOBE &kp LEFT>;
             label = "NEW_MACRO";
         };
 
         globeright: globeright {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp RIGHT>, <&macro_tap>;
-
+            bindings = <&kp GLOBE &kp RIGHT>;
             label = "GLOBERIGHT";
         };
 
         globeup: globeup {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp UP>, <&macro_tap>;
-
+            bindings = <&kp GLOBE &kp UP>;
             label = "GLOBEUP";
         };
 
         globedown: globedown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GLOBE &kp DOWN>, <&macro_tap>;
-
+            bindings = <&kp GLOBE &kp DOWN>;
             label = "GLOBEDOWN";
         };
     };
