@@ -114,13 +114,13 @@
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        function_layer {
+        combo_layer {
             bindings = <
-&trans  &trans  &trans      &trans      &trans       &trans                    &trans  &trans         &trans         &trans      &trans      &trans
-&trans  &trans  &trans      &globeup    &sk GLOBE    &trans                    &trans  &kp LG(N1)     &kp LG(N2)     &kp LG(N3)  &kp LG(N4)  &kp LG(N5)
-&trans  &trans  &globeleft  &globedown  &globeright  &trans                    &trans  &kp LG(N6)     &kp LG(N7)     &kp LG(N8)  &kp LG(N9)  &kp LG(N0)
-&trans  &trans  &trans      &trans      &trans       &trans  &trans    &trans  &trans  &kp LS(LC(C))  &kp LS(LC(V))  &trans      &trans      &trans
-                            &trans      &trans       &trans  &trans    &trans  &trans  &trans         &trans
+&trans  &kp LG(N1)  &kp LG(N2)     &kp LG(N3)      &kp LG(N4)        &kp LG(N5)                    &kp LG(N6)  &kp LG(N7)   &kp LG(N8)  &kp LG(N9)     &kp LG(N0)  &trans
+&trans  &trans      &trans         &trans          &trans            &trans                        &kp T       &kp PAGE_UP  &kp W       &kp PAGE_DOWN  &trans      &trans
+&trans  &trans      &kp LEFT_META  &kp LEFT_SHIFT  &kp LEFT_CONTROL  &trans                        &kp V       &kp C        &trans      &trans         &trans      &trans
+&trans  &trans      &trans         &trans          &trans            &trans      &trans    &trans  &trans      &trans       &trans      &trans         &trans      &trans
+                                   &trans          &trans            &trans      &trans    &trans  &trans      &trans       &trans
             >;
 
             label = "Combos";
