@@ -56,22 +56,10 @@
 &kp TAB         &kp Q   &kp W   &kp E         &kp R         &kp T                                    &kp Y      &kp U          &kp I           &kp O    &kp P     &kp MINUS
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F         &kp G                                    &kp H      &kp J          &kp K           &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B      &kp PRINTSCREEN    &kp ENTER  &kp N      &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LEFT_WIN  &kp LEFT_ALT  &kp SPACE  &mo 3              &mo 2      &kp SPACE  &kp RIGHT_ALT  &kp RIGHT_META
+                                &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 3              &mo 1      &kp SPACE  &kp RIGHT_ALT  &kp RIGHT_META
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
-        };
-
-        aptv3 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans     &trans   &trans    &trans    &trans
-&trans  &kp W   &kp G   &kp D   &kp F   &kp B                     &kp Q   &kp L      &kp U    &kp O     &kp Y     &trans
-&trans  &kp R   &kp S   &kp T   &kp H   &kp K                     &kp J   &kp N      &kp E    &kp A     &kp I     &trans
-&trans  &kp X   &kp C   &kp M   &kp P   &kp V   &trans    &trans  &kp Z   &kp COMMA  &kp DOT  &kp APOS  &kp FSLH  &trans
-                        &trans  &trans  &trans  &trans    &trans  &trans  &trans     &trans
-            >;
-
-            label = "Aptv3";
         };
 
         raise_layer {
@@ -84,11 +72,11 @@
 
             display-name = "Raise";
             bindings = <
-&kp GRAVE  &kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(N5)                     &kp LG(N6)  &kp LG(N7)      &kp LG(N8)      &kp LG(N9)        &kp LG(N0)         &trans
-&kp CAPS   &trans            &trans            &trans            &trans            &trans                         &kp V       &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp HOME           &trans
-&trans     &trans            &kp GLOBE         &kp LEFT_SHIFT    &kp LCTRL         &kp PERCENT                    &kp C       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END            &trans
-&trans     &trans            &trans            &trans            &kp LEFT_META     &trans       &trans    &trans  &kp DEL     &kp GRAVE       &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                                               &trans            &trans            &trans       &mo 4     &trans  &trans      &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &trans        &trans          &trans          &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &kp LEFT_GUI  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp HOME           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                           &kp LCTRL     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END            &kp LS(LCTRL)
+&trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp DEL       &kp GRAVE       &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                        &trans  &trans  &kp LA(LCTRL)  &mo 4     &trans  &trans        &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -104,26 +92,26 @@
 
             display-name = "Lower";
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &to 0          &to 1     &trans           &trans    &trans    &trans
-&kp F1      &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                          &kp F7         &kp F8    &kp F9           &kp F10   &kp F11   &kp F12
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DOLLAR    &kp PRCNT                       &kp CARET      &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp BACKSPACE  &kp PLUS  &kp EQUAL        &kp LBRC  &kp RBRC  &kp PIPE
-                                        &trans        &trans        &trans        &trans    &mo 4   &trans         &trans    &trans
+&kp F1  &kp F2    &kp F3  &kp F4    &kp F5      &kp F6                       &kp F7         &kp F8    &kp F9           &kp F10   &kp F11   &kp F12
+&trans  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5                       &kp N6         &kp N7    &kp N8           &kp N9    &kp N0    &trans
+&trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET      &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
+&trans  &trans    &trans  &trans    &trans      &trans     &trans    &trans  &kp BACKSPACE  &kp PLUS  &kp EQUAL        &kp LBRC  &kp RBRC  &kp PIPE
+                          &trans    &trans      &trans     &trans    &mo 4   &kp RETURN     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
-        numpad_layer {
+        extra_layer {
             bindings = <
-&trans  &trans  &trans   &trans   &trans   &trans                    &trans  &trans  &trans  &trans  &trans   &trans
-&trans  &trans  &kp F13  &kp F14  &kp F15  &trans                    &trans  &kp N7  &kp N8  &kp N9  &trans   &trans
-&trans  &trans  &trans   &trans   &trans   &trans                    &trans  &kp N4  &kp N5  &kp N6  &kp N0   &trans
-&trans  &trans  &trans   &trans   &trans   &trans  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3  &kp DOT  &trans
-                         &trans   &trans   &trans  &trans    &trans  &trans  &trans  &trans
+&kp F13   &kp F14  &kp F15  &trans  &trans  &trans                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp CAPS  &trans   &trans   &trans  &trans  &trans                    &trans      &trans        &trans        &trans        &trans        &trans
+&trans    &trans   &trans   &trans  &trans  &trans                    &trans      &trans        &trans        &trans        &trans        &trans
+&trans    &trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans        &trans        &trans        &trans
+                            &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans
             >;
 
-            label = "Numpad";
+            label = "Extra";
         };
     };
 };
