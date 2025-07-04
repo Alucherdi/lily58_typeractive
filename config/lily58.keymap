@@ -56,7 +56,7 @@
 &kp TAB         &kp Q   &kp W   &kp E         &kp R         &kp T                                    &kp Y      &kp U          &kp I           &kp O    &kp P     &kp MINUS
 &kp LEFT_SHIFT  &kp A   &kp S   &kp D         &kp F         &kp G                                    &kp H      &kp J          &kp K           &kp L    &kp SEMI  &kp SQT
 &kp LCTRL       &kp Z   &kp X   &kp C         &kp V         &kp B      &kp PRINTSCREEN    &kp ENTER  &kp N      &kp M          &kp COMMA       &kp DOT  &kp FSLH  &kp RSHFT
-                                &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 3              &mo 1      &kp SPACE  &kp RIGHT_ALT  &kp RIGHT_META
+                                &kp LEFT_ALT  &kp LEFT_GUI  &kp SPACE  &mo 2              &mo 1      &kp SPACE  &kp RIGHT_ALT  &kp RIGHT_META
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -76,7 +76,7 @@
 &trans  &trans  &trans  &trans  &trans  &trans                           &kp LEFT_GUI  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp HOME           &trans
 &trans  &trans  &trans  &trans  &trans  &trans                           &kp LCTRL     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END            &kp LS(LCTRL)
 &trans  &trans  &trans  &trans  &trans  &trans         &trans    &trans  &kp DEL       &kp GRAVE       &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                        &trans  &trans  &kp LA(LCTRL)  &mo 4     &trans  &trans        &trans          &trans
+                        &trans  &trans  &kp LA(LCTRL)  &mo 3     &trans  &trans        &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -96,7 +96,7 @@
 &trans  &kp N1    &kp N2  &kp N3    &kp N4      &kp N5                       &kp N6         &kp N7    &kp N8           &kp N9    &kp N0    &trans
 &trans  &kp EXCL  &kp AT  &kp HASH  &kp DOLLAR  &kp PRCNT                    &kp CARET      &kp AMPS  &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp TILDE
 &trans  &trans    &trans  &trans    &trans      &trans     &trans    &trans  &kp BACKSPACE  &kp PLUS  &kp EQUAL        &kp LBRC  &kp RBRC  &kp PIPE
-                          &trans    &trans      &trans     &trans    &mo 4   &kp RETURN     &trans    &trans
+                          &trans    &trans      &trans     &trans    &mo 3   &kp RETURN     &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
