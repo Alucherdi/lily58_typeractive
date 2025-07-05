@@ -9,36 +9,6 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
-    macros {
-        globeleft: globeleft {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk GLOBE &kp LEFT_ARROW>;
-            label = "GLOBELEFT";
-        };
-
-        globeright: globeright {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk GLOBE &kp RIGHT_ARROW>;
-            label = "GLOBERIGHT";
-        };
-
-        globeup: globeup {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk GLOBE &kp UP_ARROW>;
-            label = "GLOBEUP";
-        };
-
-        globedown: globedown {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&sk GLOBE &kp DOWN_ARROW>;
-            label = "GLOBEDOWN";
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -72,11 +42,11 @@
 
             display-name = "Raise";
             bindings = <
-&trans  &trans  &trans  &trans  &trans         &trans                    &trans        &trans          &trans          &trans            &trans             &trans
-&trans  &trans  &trans  &trans  &trans         &trans                    &kp LEFT_GUI  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp HOME           &trans
-&trans  &trans  &trans  &trans  &trans         &trans                    &kp LCTRL     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END            &kp LS(LCTRL)
-&trans  &trans  &trans  &trans  &trans         &trans  &trans    &trans  &kp DEL       &kp GRAVE       &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
-                        &trans  &kp LA(LCTRL)  &trans  &mo 3     &trans  &trans        &trans          &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans        &trans          &trans          &trans            &trans             &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LEFT_GUI  &kp PAGE_UP     &kp UP_ARROW    &kp PAGE_DOWN     &kp HOME           &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &kp LCTRL     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW   &kp END            &kp LS(LCTRL)
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp DEL       &kp GRAVE       &kp TILDE       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp BACKSLASH
+                        &trans  &trans  &trans  &mo 3     &trans  &trans        &trans          &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
@@ -104,11 +74,11 @@
 
         extra_layer {
             bindings = <
-&kp F13   &kp F14  &kp F15  &trans  &trans  &trans                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
-&kp CAPS  &trans   &trans   &trans  &trans  &trans                    &trans      &trans        &trans        &trans        &trans        &trans
-&trans    &trans   &trans   &trans  &trans  &trans                    &trans      &trans        &trans        &trans        &trans        &trans
-&trans    &trans   &trans   &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans        &trans        &trans        &trans
-                            &trans  &trans  &trans  &trans    &trans  &trans      &trans        &trans
+&kp F13   &kp F14  &kp F15  &kp F16  &kp F17  &kp F18                    &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&kp CAPS  &trans   &trans   &trans   &trans   &trans                     &trans      &trans        &trans        &trans        &trans        &trans
+&trans    &trans   &trans   &trans   &trans   &trans                     &trans      &trans        &trans        &trans        &trans        &trans
+&trans    &trans   &trans   &trans   &trans   &trans   &trans    &trans  &trans      &trans        &trans        &trans        &trans        &trans
+                            &trans   &trans   &trans   &trans    &trans  &trans      &trans        &trans
             >;
 
             label = "Extra";
